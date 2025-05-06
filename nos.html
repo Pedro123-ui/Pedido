@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pedido de Ana</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        body{
+            background-color: black;
+            color: aqua;
+            display: flex;
+            height: 100vh;
+            justify-content: space-evenly;
+            align-items: center;
+            flex-direction: column;
+            padding: 20px;
+        }
+        h1{
+            font-size: 2rem;
+            text-align: center;
+            text-shadow: 0 0 10px aqua;
+            margin-bottom: 20px;
+            animation: glow 2s infinite alternate;
+        }
+        @keyframes glow{
+            from{
+                text-shadow: 0 0 5px aqua;
+            }
+            to{
+                text-shadow: 0 0 20px aqua;
+            }
+        }
+        .box{
+            display: flex;
+            gap: 15px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        img{
+            max-width: 100%;
+            width: 200px;
+            height: 300px;
+            box-shadow: 0 0 5px aqua, 0 0 10px aqua;
+            border: none;
+            transition: all 0.6s ease;
+        }
+        img:hover{
+            transform: scale(1.2);
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Sou mais feliz contigo!</h1>
+    <div class="box">
+        <img src="imagens/Imagem do WhatsApp de 2025-05-06 à(s) 00.36.21_9a312cf5.jpg" alt="nosso desenho juntos">
+        <img src="imagens/Imagem do WhatsApp de 2025-05-06 à(s) 00.36.21_11d1d6e4.jpg" alt="nosso primeiro rolê">
+        <img src="imagens/Imagem do WhatsApp de 2025-05-06 à(s) 00.36.20_53b2cf1a.jpg" alt="nós dois juntos">
+    </div>
+</body>
+</html>

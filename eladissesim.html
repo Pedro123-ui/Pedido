@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pedido de Ana</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        body{
+            background-color: black;
+            color: aqua;
+            display: flex;
+            height: 100vh;
+            justify-content: center;
+            align-items: center;
+            font-weight: bold;
+            font-size: 5rem;
+        }
+        span:nth-child(1){animation-delay: 0s;}
+        span:nth-child(2){animation-delay: 0.1s;}
+        span:nth-child(3){animation-delay: 0.2s;}
+        span:nth-child(4){animation-delay: 0.3s;}
+        span:nth-child(5){animation-delay: 0.4s;}
+        span:nth-child(6){animation-delay: 0.5s;}
+        span:nth-child(7){animation-delay: 0.6s;}
+        span:nth-child(8){animation-delay: 0.7s;}
+        span:nth-child(9){animation-delay: 0.8s;}
+        span:nth-child(10){animation-delay: 0.9s;}
+        span:nth-child(11){animation-delay: 1s;}
+        span:nth-child(12){animation-delay: 1.1s;}
+        span:nth-child(13){animation-delay: 1.2s;}
+        span:nth-child(14){animation-delay: 1.3s;
+        cursor: pointer;}
+        span{
+            animation: coloring 5s infinite alternate;
+            display: inline-block;
+        }
+        @keyframes coloring {
+        0%   { color: white; }
+        5%   { color: aliceblue; }
+        10%  { color: antiquewhite; }
+        15%  { color: aqua; }
+        20%  { color: aquamarine; }
+        25%  { color: azure; }
+        30%  { color: beige; }
+        35%  { color: bisque; }
+        40%  { color: black; }
+        45%  { color: blue; }
+        50%  { color: brown; }
+        55%  { color: chartreuse; }
+        60%  { color: chocolate; }
+        65%  { color: coral; }
+        70%  { color: crimson; }
+        75%  { color: cyan; }
+        80%  { color: deeppink; }
+        85%  { color: gold; }
+        90%  { color: greenyellow; }
+        95%  { color: hotpink; }
+        100% { color: lawngreen; }
+    }
+    @media(max-width:413px){
+        body{
+            font-size: 3rem;
+        }
+    }
+    </style>
+</head>
+<body>
+    <span>E</span>
+    <span>L</span>
+    <span>A</span>
+    <span>D</span>
+    <span>I</span>
+    <span>S</span>
+    <span>S</span>
+    <span>E</span>
+    <span>S</span>
+    <span>I</span>
+    <span>M</span>
+    <span>!</span>
+    <span>!</span>
+    <span id="surpresa">!</span>
+    <script src="index.js"></script>
+</body>
+</html>

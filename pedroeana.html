@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pedido de Ana</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        body{
+            background-color: black;
+            color: aqua;
+            display: flex;
+            height: 100vh;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+            font-family: sans-serif;
+            text-align: center;
+            padding: 20px;
+        }
+        h1{
+            border-right: 5px solid aqua;
+            animation: surgir 3s steps(21) forwards;
+            white-space: nowrap;
+            overflow: hidden;
+            font-size: 2rem;
+            margin-bottom: 20px;
+        }
+        @keyframes surgir{
+            from{
+                width: 0ch;
+            }
+            to{
+                width: 21ch;
+            }
+        }
+         p{
+            max-width: 600px;
+            font-size: 1.3rem;
+            margin-bottom: 20px;
+        }
+        .container{
+            display: flex;
+            gap: 15px;
+            margin-top: 20px;
+        }
+        button{
+            width: 100px;
+            height: 40px;
+            background-color: aqua;
+            color: black;
+            border: none;
+            border-radius: 10px;
+            transition: all 0.4s ease;
+            font-weight: bold;
+            font-size: 1rem;
+            cursor: pointer;
+        }
+        button:hover{
+            background-color: black;
+            color: aqua;
+            border: solid 2px aqua;
+            transform: scale(1.1);
+            text-shadow: 0 0 2px aqua, 0 0 4px aqua,0 0 8px aqua;
+            box-shadow: 0 0 5px aqua, 0 0 10px aqua, 0 0 20px aqua;
+        }
+        #resposta {
+        margin-top: 30px;
+        font-size: 1.2rem;
+        color: aqua;
+        min-height: 30px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Quem é Ana para mim</h1>
+    <p>Ana é uma pessoa que demonstra gostar de mim, é uma pessoa que cuida de mim, é uma pessoa que zela por mim, Ana é a mulher a que eu quero cuidar, que eu quero me dedicar a ter ao meu lado e farei feliz, é a pessoa por quem eu quero zelar todos os dias da minha vida </p>
+
+    <p>aceita namorar comigo?</p>
+    <div class="container">
+
+        <button onclick="location.href = 'eladissesim.html'">SIM</button>
+        <button id="nao">NÃO</button>
+    </div>
+    <span id="resposta"></span>
+
+    <script>
+        let nao = document.getElementById('nao')
+let resposta = document.getElementById('resposta')
+
+let contador = 0
+
+nao.addEventListener('click', function(){
+    contador++
+    if(contador === 1) {
+        resposta.textContent = 'Não?'
+    } else if(contador === 2) {
+        resposta.textContent = 'Tem certeza?'
+    } else {
+        resposta . textContent = 'Aperta logo o sim, eu vou te tratar bem'
+    }
+})
+    </script>
+</body>
+</html>
